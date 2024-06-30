@@ -1,4 +1,4 @@
-package lucky_money
+package lm
 
 import (
 	"github.com/shopspring/decimal"

@@ -1,4 +1,4 @@
-package lucky_money
+package lm
 
 import (
 	"errors"
@@ -48,6 +48,8 @@ func (l *LuckyMoney) String() string {
 	return fmt.Sprintf("{Quantity:%d, Amount:%s}", l.Quantity, l.Amount)
 }
 
+// Split 拆分算法
+// st: 可以选择 Random 和 Identical
 func Split(l LuckyMoney, st int) ([]decimal.Decimal, error) {
 	if err := Check(l); err != nil {
 		return nil, err
